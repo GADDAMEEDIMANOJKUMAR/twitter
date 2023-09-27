@@ -59,7 +59,7 @@ const authenticateToken = (request, response, next) => {
       }
     });
   } else {
-    response.send(401);
+    response.status(401);
     response.send("Invalid JWT Token");
   }
 };
